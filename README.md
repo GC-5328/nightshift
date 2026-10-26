@@ -15,7 +15,7 @@ You need **Python 3.9 or newer** and a **Portkey API key**.
 ### 1. Get the code
 
 ```bash
-git clone <this repo's URL>
+git clone https://github.com/GC-5328/nightshift.git
 cd nightshift
 ```
 
