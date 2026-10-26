@@ -490,3 +490,10 @@ input[type=range] { padding: 0; border: 0; accent-color: var(--ink); background:
 #office-line { font: inherit; font-weight: 500; color: var(--ink); background: transparent; border: 1px solid transparent; padding: 2px 6px; margin: -3px 0 -3px -7px; width: 150px; border-radius: 3px; }
 #office-line:hover { border-color: var(--line-2); background: #fff; }
 #office-line:focus { border-color: var(--ink-2); background: #fff; }
+
+.answer-time { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.answer-time #ans-hours { display: inline-flex; gap: 4px; align-items: center; }
+#ans-mode, #ans-from, #ans-to { font: inherit; font-weight: 500; color: var(--ink); background: transparent; border: 1px solid transparent; padding: 2px 4px; border-radius: 3px; width: auto; }
+#ans-mode { margin-left: -5px; }
+#ans-mode:hover, #ans-from:hover, #ans-to:hover { border-color: var(--line-2); background: #fff; }
+#ans-mode:focus, #ans-from:focus, #ans-to:focus { border-color: var(--ink-2); background: #fff; }

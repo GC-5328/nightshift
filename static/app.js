@@ -115,7 +115,7 @@ LOADERS.overview = async (win) => {
   $("#ov-agent").innerHTML = `
     <div class="ac-top"><div class="avatar">☾</div><div style="flex:1"><div class="state">${on ? `${esc(a.name)} is answering` : `${esc(a.name)} is off`}</div><div class="state-sub">${on ? "After-hours calls go to the AI agent" : `Calls forward to ${esc(a.forward_number)}`}</div></div>
       <label class="switch"><input type="checkbox" id="agent-toggle" ${on ? "checked" : ""}><span></span></label></div>
-    <div class="facts"><span>Answers</span><b>${esc(on ? mode : "No calls")}</b><span>Office line</span><b class="office-line"><input id="office-line" value="${esc(a.forward_number)}" title="Calls are forwarded here when Lucy is off or during office hours" aria-label="Office line"><button class="btn plain small hidden" id="office-save">Save</button></b><span>AI spend today</span><b>${money(o.spend_today)} · max ${money(+S.settings.per_call_budget_usd)} per call</b></div>
+    <div class="facts"><span>Answers</span><b class="answer-time">${on ? `<select id="ans-mode" aria-label="When Lucy answers"><option value="after_hours">After hours</option><option value="always">All day</option>${a.answering_mode === "forward_all" ? '<option value="forward_all">Never (forward all)</option>' : ""}</select><span id="ans-hours"><input type="time" id="ans-from" value="${esc(a.business_hours.end)}" title="Lucy starts answering (office closes)" aria-label="Start answering at"><span class="muted">–</span><input type="time" id="ans-to" value="${esc(a.business_hours.start)}" title="Lucy stops answering (office opens)" aria-label="Stop answering at"></span><button class="btn plain small hidden" id="ans-save">Save</button>` : "No calls"}</b><span>Office line</span><b class="office-line"><input id="office-line" value="${esc(a.forward_number)}" title="Calls are forwarded here when Lucy is off or during office hours" aria-label="Office line"><button class="btn plain small hidden" id="office-save">Save</button></b><span>AI spend today</span><b>${money(o.spend_today)} · max ${money(+S.settings.per_call_budget_usd)} per call</b></div>
     <div class="alert-box"><label style="margin-top:0">Manager text alerts</label>
       <select id="alert-select">
         <option value="off">No — don't text me</option>
@@ -138,6 +138,20 @@ LOADERS.overview = async (win) => {
     $("#alert-help").textContent = help[v];
     toast(v === "off" ? "Manager text alerts off" : "Manager text alerts updated");
   };
+  if (on) {
+    const am = $("#ans-mode"), af = $("#ans-from"), at = $("#ans-to"), as = $("#ans-save");
+    am.value = a.answering_mode;
+    const sync = () => {
+      $("#ans-hours").classList.toggle("hidden", am.value !== "after_hours");
+      as.classList.toggle("hidden", am.value === a.answering_mode && af.value === a.business_hours.end && at.value === a.business_hours.start);
+    };
+    [am, af, at].forEach((el) => el.addEventListener("input", sync)); sync();
+    as.onclick = async () => {
+      if (am.value === "after_hours" && (!af.value || !at.value || af.value === at.value)) return toast("Pick a start and an end time that differ", true);
+      S.settings = await api("/api/settings", { method: "POST", body: { answering_mode: am.value, business_hours: { ...a.business_hours, end: af.value, start: at.value } } });
+      toast(am.value === "always" ? "Lucy now answers all day" : `Lucy answers ${af.value}–${at.value}`); LOADERS.overview();
+    };
+  }
   const ol = $("#office-line"), olSave = $("#office-save");
   ol.oninput = () => olSave.classList.toggle("hidden", ol.value.trim() === a.forward_number);
   const saveLine = async () => {
