@@ -1,0 +1,16 @@
+{
+  "tag": "smoke",
+  "effort": "low",
+  "calls": 2,
+  "accuracy": 0.917,
+  "avg_cost_usd": 0.00142,
+  "avg_input": 22228,
+  "avg_cached": 18306,
+  "avg_output": 1690,
+  "avg_turn_s": 2.87,
+  "avg_requests": 7.0,
+  "call_ids": [
+    1,
+    2
+  ]
+}

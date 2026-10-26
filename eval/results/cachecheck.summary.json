@@ -1,0 +1,15 @@
+{
+  "tag": "cachecheck",
+  "effort": "low",
+  "calls": 1,
+  "accuracy": 1.0,
+  "avg_cost_usd": 0.00224,
+  "avg_input": 35817,
+  "avg_cached": 29146,
+  "avg_output": 2552,
+  "avg_turn_s": 1.38,
+  "avg_requests": 11.0,
+  "call_ids": [
+    10
+  ]
+}

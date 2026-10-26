@@ -1,0 +1,18 @@
+{
+  "tag": "attacks_v4",
+  "effort": "low",
+  "calls": 4,
+  "accuracy": 1.0,
+  "avg_cost_usd": 0.00044,
+  "avg_input": 8729,
+  "avg_cached": 7842,
+  "avg_output": 538,
+  "avg_turn_s": 0.32,
+  "avg_requests": 2.0,
+  "call_ids": [
+    10,
+    11,
+    12,
+    13
+  ]
+}

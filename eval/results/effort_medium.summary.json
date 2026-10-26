@@ -1,0 +1,23 @@
+{
+  "tag": "effort_medium",
+  "effort": "medium",
+  "calls": 9,
+  "accuracy": 0.922,
+  "avg_cost_usd": 0.00133,
+  "avg_input": 18600,
+  "avg_cached": 16186,
+  "avg_output": 1847,
+  "avg_turn_s": 3.15,
+  "avg_requests": 5.8,
+  "call_ids": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ]
+}

@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NightShift</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand"><span class="wordmark">NIGHTSHIFT</span><span class="co" id="company-name">After-hours desk</span></div>
+    <nav class="links">
+      <button class="nav active" data-page="overview">Overview</button>
+      <button class="nav" data-page="live">Live<span class="live-dot hidden" id="live-dot"></span><span class="count" id="n-live"></span></button>
+      <button class="nav" data-page="calls">Calls<span class="count" id="n-calls"></span></button>
+      <button class="nav" data-page="report">Report</button>
+      <button class="nav" data-page="team">Schedule</button>
+      <button class="nav" data-page="agent">Agent</button>
+    </nav>
+    <div class="status"><button class="btn primary small" data-page-btn="test" id="btn-test-top">Test</button><span id="foot-agent"><span class="dot"></span>…</span><span id="foot-model"></span></div>
+  </header>
+
+  <main class="main">
+    <!-- OVERVIEW -->
+    <section class="page active" id="page-overview">
+      <div class="head"><div><h1 id="greet">Good morning</h1><p id="greet-sub">Here's what happened while the office was closed.</p></div>
+        <div class="actions"><div class="seg" id="ov-window"><button data-w="current">Current</button><button data-w="last_night">Last night</button><button data-w="7d">7 days</button></div><button class="btn" id="ov-refresh">Refresh</button></div></div>
+      <div class="hero">
+        <div>
+          <div class="since" id="ov-since"></div>
+          <div class="stats" id="ov-stats"></div>
+        </div>
+        <div class="card agent-card" id="ov-agent"></div>
+      </div>
+      <div class="card" style="margin-bottom:18px"><div class="card-title"><h3>Action items</h3><span class="sub">nothing goes to the office until you push it</span><span class="right row"><button class="btn small" id="ov-report">Report</button><button class="btn small primary" id="ov-push">Push to office</button></span></div><div class="pipeline" id="ov-pipeline"></div></div>
+      <div class="grid g-2-1" style="margin-bottom:18px">
+        <div class="card"><div class="card-title"><h3 id="ov-chart-title">Calls by hour</h3><span class="sub" id="ov-chart-sub">close to open</span></div><div class="chart" id="ov-hours"></div></div>
+        <div class="card"><div class="card-title"><h3>Needs your attention</h3></div><div class="list" id="ov-attention"></div></div>
+      </div>
+      <div class="grid g2">
+        <div class="card"><div class="card-title"><h3>Recent calls</h3><span class="right"><button class="btn plain small" data-goto="calls">See all</button></span></div><div class="list" id="ov-recent"></div></div>
+        <div class="card"><div class="card-title"><h3>Tentative visits</h3><span class="sub">windows offered on calls · tech suggested by Dispatcher</span></div><div class="list" id="ov-upcoming"></div></div>
+      </div>
+    </section>
+
+    <!-- CALLS -->
+    <section class="page" id="page-calls">
+      <div class="head"><div><h1>Calls</h1><p>Every call the agent handled, with notes, transcript, trace and cost.</p></div>
+        <div class="actions"><div class="seg" id="calls-tabs"><button class="on" data-tab="history">History</button><button data-tab="analysis">Analysis</button></div></div></div>
+      <div id="calls-history">
+        <div class="toolbar">
+          <input type="search" id="q" placeholder="Search name, town, problem…">
+          <select id="f-cat"><option value="">All types</option><option value="service_request">Service requests</option><option value="emergency">Emergencies</option><option value="message">Messages</option><option value="out_of_area">Out of area</option><option value="spam">Spam & attacks</option><option value="forwarded">Forwarded</option></select>
+          <select id="f-trade"><option value="">All trades</option><option value="hvac">HVAC</option><option value="electrical">Electrical</option><option value="solar">Solar</option></select>
+          <span class="muted small" id="calls-count" style="margin-left:auto"></span>
+        </div>
+        <div class="card" style="padding:12px 10px"><table><thead><tr><th>When</th><th>Caller</th><th>What happened</th><th>Priority</th><th>Visit</th><th class="num">Length</th><th class="num">Cost</th></tr></thead><tbody id="calls-body"></tbody></table></div>
+      </div>
+      <div id="calls-analysis" class="hidden">
+        <div class="toolbar"><div class="seg" id="an-range"><button data-d="1">24 h</button><button class="on" data-d="7">7 days</button><button data-d="30">30 days</button></div></div>
+        <div class="stats" id="an-stats" style="grid-template-columns:repeat(4,1fr);margin-bottom:18px"></div>
+        <div class="grid g2" style="margin-bottom:18px">
+          <div class="card"><div class="card-title"><h3>Calls by hour of night</h3></div><div class="chart" id="an-hour"></div></div>
+          <div class="card"><div class="card-title"><h3>From call to booked visit</h3></div><div class="hbars" id="an-funnel"></div></div>
+        </div>
+        <div class="grid g3" style="margin-bottom:18px">
+          <div class="card"><div class="card-title"><h3>Call type</h3></div><div class="hbars" id="an-cat"></div></div>
+          <div class="card"><div class="card-title"><h3>Trade</h3></div><div class="hbars" id="an-trade"></div></div>
+          <div class="card"><div class="card-title"><h3>Town</h3></div><div class="hbars" id="an-town"></div></div>
+        </div>
+        <div class="grid g2">
+          <div class="card"><div class="card-title"><h3>Cost by agent</h3><span class="sub">measured from every model request</span></div><div id="an-agents"></div></div>
+          <div class="card"><div class="card-title"><h3>What it costs a business</h3></div><div id="an-cost"></div></div>
+        </div>
+        <div class="card" style="margin-top:18px"><div class="card-title"><h3>Safety log</h3><span class="sub">guards that fired</span></div><div id="an-safety"></div></div>
+      </div>
+    </section>
+
+    <!-- MORNING REPORT -->
+    <section class="page" id="page-report">
+      <div class="head"><div><h1>Report</h1><p>One report per night shift, or a current report any time: the calls that came in, and who should take each job.</p></div>
+        <div class="actions"><button class="btn" onclick="window.print()">Print</button></div></div>
+      <div class="report-grid">
+        <div class="nights no-print" id="nights"></div>
+        <div id="report"></div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section class="page" id="page-team">
+      <div class="head"><div><h1>Schedule</h1><p id="cal-title">Technicians, booked jobs and the visits offered overnight.</p></div>
+        <div class="actions">
+          <button class="btn" id="cal-prev">‹</button><button class="btn" id="cal-today">Today</button><button class="btn" id="cal-next">›</button>
+          <div class="seg" id="cal-view"><button data-v="day">Day</button><button class="on" data-v="week">Week</button><button data-v="month">Month</button></div>
+        </div></div>
+      <div class="cal-filter" id="cal-techs"></div>
+      <div class="calendar" id="calendar"></div>
+    </section>
+
+    <!-- TEST -->
+    <section class="page" id="page-test">
+      <div class="head"><div><h1>Test</h1><p>Launch a wave of simulated callers, or call the agent yourself.</p></div>
+        <div class="actions"><div class="seg" id="test-tabs"><button class="on" data-tab="sim">Simulate calls</button><button data-tab="self">Call it yourself</button></div></div></div>
+      <div id="test-sim">
+        <div class="grid g-1-2">
+          <div class="card">
+            <div class="card-title"><h3>Simulated callers</h3></div>
+            <label style="margin-top:0">How many test calls</label>
+            <div class="range-row"><input type="range" id="sim-n" min="1" max="25" value="3"><span id="sim-n-v">3</span></div>
+            <p class="help">At most 3 are on the line at the same time; the rest wait and ring in as lines free up.</p>
+            <label>Pace</label>
+            <div class="seg" id="sim-pace"><button class="on" data-p="realistic">Real speaking speed</button><button data-p="fast">As fast as possible</button></div>
+            <label>Calls arrive over</label>
+            <div class="seg" id="sim-spread"><button data-s="0">All at once</button><button class="on" data-s="20">20 seconds</button><button data-s="60">1 minute</button></div>
+            <label>Callers</label>
+            <div class="seg" id="sim-mode"><button class="on" data-m="invent">Invent new callers</button><button data-m="cards">Use scenario cards</button></div>
+            <p class="help" id="sim-mode-help">Every call gets a brand-new person and situation, never a repeat.</p>
+            <div id="sim-cards" class="hidden"><label>Scenario cards <span class="muted">(none selected = all)</span></label><div class="chips" id="sim-scen"></div></div>
+            <div class="row" style="margin-top:22px"><button class="btn primary" id="btn-sim-go">Start test calls</button><button class="btn danger" id="btn-sim-stop">Stop all</button></div>
+            <p class="help">Each simulated caller is an AI playing the customer. Their tokens (and the caller-inventing tokens) are tracked separately and not counted as agent cost.</p>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Running now</h3><span class="sub" id="sim-sub"></span><span class="right"><button class="btn small" data-goto="live">Open live monitor</button></span></div>
+            <div id="sim-board" class="board"></div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:16px"><div class="card-title"><h3>Invented callers log</h3><span class="sub" id="gen-sub"></span></div><div id="gen-list"></div></div>
+      </div>
+      <div id="test-self" class="hidden">
+        <div class="call-grid">
+        <div class="stack">
+          <div class="card phone-card">
+            <div class="ring" id="ring">🎧</div>
+            <div class="who" id="agent-title">Riley</div>
+            <div class="status" id="call-status">Ready</div>
+            <div class="timer" id="call-timer">0:00</div>
+            <div class="call-btns">
+              <button class="round go" id="btn-start" title="Place call"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.6 3.6a1 1 0 0 1-.25 1z"/></svg></button>
+              <button class="round mic" id="btn-mic" title="Talk" disabled><svg viewBox="0 0 24 24"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-3.1A7 7 0 0 0 19 11z"/></svg></button>
+              <button class="round stop" id="btn-hang" title="Hang up" disabled><svg viewBox="0 0 24 24" style="transform:rotate(135deg)"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.6 3.6a1 1 0 0 1-.25 1z"/></svg></button>
+            </div>
+            <div class="checks"><label><input type="checkbox" id="opt-handsfree" checked>Hands-free</label><label><input type="checkbox" id="opt-voice" checked>Voice</label></div>
+          </div>
+          <div class="card">
+            <div class="card-title"><h3>Caller</h3></div>
+            <label style="margin-top:0">Simulated customer</label>
+            <select id="scenario"><option value="">Me (mic or keyboard)</option></select>
+            <label>Caller ID</label><input id="caller-id" value="(203) 555-0142">
+            <label>Time of call</label><input id="sim-time" type="datetime-local">
+            <p class="help">During business hours the call is forwarded to the office, unless Settings say otherwise.</p>
+            <div class="row" style="margin-top:12px"><button class="btn small" id="btn-autostep" disabled>Next line</button><button class="btn small" id="btn-autoplay" disabled>Auto-play</button></div>
+          </div>
+        </div>
+        <div class="card convo">
+          <div class="convo-head"><b>Conversation</b><span class="pill" id="call-badge">No call</span><span class="muted small" id="mic-hint" style="margin-left:auto"></span></div>
+          <div class="transcript" id="transcript"><div class="empty">Press the green button to call the after-hours line.<br>Pick a simulated customer to watch a whole call — including an emergency and an attacker.</div></div>
+          <div class="composer"><input id="say-input" placeholder="Type what the caller says…" disabled><button class="btn primary" id="btn-send" disabled>Send</button></div>
+        </div>
+        <div class="stack">
+          <div class="card"><div class="card-title"><h3>Notes</h3><span class="sub">filled in live</span></div><div class="notes" id="live-notes"></div><div id="live-hold" style="margin-top:12px"></div></div>
+          <div class="card"><div class="card-title"><h3>Call flow</h3></div><div class="steps" id="live-steps"></div></div>
+          <div class="card"><div class="card-title"><h3>Cost of this call</h3></div>
+            <div class="mini-kv"><span class="muted">Model requests</span><b id="u-req">0</b><span class="muted">Input (cached)</span><b id="u-in">0</b><span class="muted">Output</span><b id="u-out">0</b><span class="muted">Cost</span><b id="u-cost">$0</b></div>
+            <div class="meter"><div id="u-bar"></div></div><div class="help" id="u-cap"></div></div>
+          <div class="card"><div class="card-title"><h3>Guards & tools</h3></div><div class="steps" id="live-guards"><span class="muted small">Nothing yet.</span></div></div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- LIVE -->
+    <section class="page" id="page-live">
+      <div class="head"><div><h1>Live</h1><p>Every call on the line right now. Pick one to listen in.</p></div>
+        <div class="actions"><span class="muted small" id="live-sub"></span><button class="btn" data-goto="test">Start test calls</button></div></div>
+      <div class="live-grid">
+        <div id="live-board" class="board"></div>
+        <div class="card listen" id="listen"><div class="empty">Select a call to listen in.<br><br>Audio plays through your speakers — the agent and caller use different voices.</div></div>
+      </div>
+    </section>
+
+    <!-- AGENT -->
+    <section class="page" id="page-agent">
+      <div class="head"><div><h1>Agent</h1><p>Map the conversation and tune how the agent sounds, routes calls and alerts you.</p></div>
+        <div class="actions"><div class="seg" id="agent-tabs"><button class="on" data-tab="map">Conversation map</button><button data-tab="settings">Agent settings</button><button data-tab="kb">Knowledge base</button><button data-tab="model">Model</button></div></div></div>
+      <div id="agent-map">
+        <div class="toolbar"><button class="btn" id="btn-tree-add">Add step</button><button class="btn" id="btn-tree-export">Export</button><label class="btn" style="margin:0;color:var(--ink)" title="NightShift or Retell AI agent export (.json)">Import<input type="file" id="tree-import" accept=".json" class="hidden"></label><button class="btn" id="btn-tree-reset">Reset</button><button class="btn primary" id="btn-tree-save">Save</button></div>
+        <div class="flow-grid">
+        <div class="stack">
+          <div class="diagram" id="tree-diagram"></div>
+          <div class="card"><div class="card-title"><h3>Rules for every step</h3><span class="sub">tone, what not to promise, how to end calls</span></div><textarea id="global-prompt" rows="8"></textarea></div>
+          <div class="card"><div class="card-title"><h3>Safety words</h3><span class="sub">checked in code on every caller sentence; any match jumps straight to the emergency step</span></div><div id="rules"></div></div>
+        </div>
+        <div class="card" id="node-editor"><div class="empty">Select a step in the diagram.</div></div>
+      </div>
+      <div class="errors" id="tree-errors" style="margin-top:12px"></div>
+      </div>
+      <div id="agent-kb" class="hidden">
+        <div class="grid g-1-2">
+          <div class="card">
+            <div class="card-title"><h3>Customer knowledge base</h3></div>
+            <p class="help" style="margin-top:0">Upload what a good CSR would know: price sheets, service agreements, equipment lists, FAQs, warranty terms, customer lists.</p>
+            <label class="dropzone" id="kb-drop"><input type="file" id="kb-file" multiple class="hidden">
+              <div class="dz-icon">↑</div><div><b>Drop files here</b> or click to choose</div><div class="muted small" id="kb-types"></div></label>
+            <div class="kb-note"><b>Planned, not connected yet.</b> Files are stored on this computer only. Next step: split them into passages and let the Receptionist look up answers (retrieval) with a citation, so it never guesses prices or policies. Customer lists would let it greet returning customers by name from caller ID.</div>
+          </div>
+          <div class="card"><div class="card-title"><h3>Uploaded files</h3><span class="sub" id="kb-count"></span></div><div id="kb-list"></div></div>
+        </div>
+      </div>
+      <div id="agent-model" class="hidden">
+        <div class="kb-note" style="margin-bottom:16px"><b>Preview only.</b> Every agent runs on <b>gpt-6-luna</b> through the course Portkey key. The other choices show how a business could trade cost for quality per agent; they are not connected.</div>
+        <div class="grid g3" id="model-cards"></div>
+      </div>
+      <div id="agent-settings" class="hidden">
+        <div class="toolbar" style="justify-content:flex-end"><button class="btn primary" id="btn-settings-save">Save settings</button></div>
+        <div class="set-grid">
+        <div class="card">
+          <div class="card-title"><h3>Voice</h3></div>
+          <label style="margin-top:0">Accent</label>
+          <select id="s-voice_lang"><option value="en-US">English — United States</option><option value="en-GB">English — United Kingdom</option><option value="en-AU">English — Australia</option><option value="en-IE">English — Ireland</option><option value="en-IN">English — India</option><option value="en-ZA">English — South Africa</option><option value="es">Spanish</option></select>
+          <label>Voice</label><select id="s-voice_name"></select>
+          <label>Speaking speed</label><div class="range-row"><input type="range" id="s-speech_rate" min="0.6" max="1.6" step="0.05"><span id="v-rate"></span></div>
+          <label>Pitch</label><div class="range-row"><input type="range" id="s-speech_pitch" min="0.5" max="1.6" step="0.05"><span id="v-pitch"></span></div>
+          <label>Pause before answering (ms)</label><input type="number" id="s-response_delay_ms" min="0" max="2000" step="50">
+          <label class="row" style="gap:8px;color:var(--ink)"><input type="checkbox" id="s-use_fillers" style="width:auto">Say a short filler while looking something up</label>
+          <input id="s-fillers" placeholder="Filler lines, separated by |">
+          <label>Pronunciations <span class="muted">(word = how to say it, one per line)</span></label><textarea id="s-pron" rows="3" placeholder="HVAC = H-vack"></textarea>
+          <div class="grid g2" style="gap:12px"><div><label>"Are you still there?" after (s)</label><input type="number" id="s-reminder_after_s" min="3" max="60"></div><div><label>Reminders before hanging up</label><input type="number" id="s-reminder_max" min="0" max="5"></div></div>
+          <label>Max call length (minutes)</label><input type="number" id="s-max_call_minutes" min="1" max="120">
+          <div style="margin-top:14px"><button class="btn" id="btn-voice-test">Play sample</button></div>
+        </div>
+        <div class="card">
+          <div class="card-title"><h3>Personality</h3></div>
+          <label style="margin-top:0">Name</label><input id="s-agent_name">
+          <label>Greeting</label><textarea id="s-greeting"></textarea><p class="help">Fixed text — spoken instantly and costs nothing. Include the recording notice if you record calls.</p>
+          <label>Persona</label><textarea id="s-persona"></textarea>
+          <label>Conversation habits</label><textarea id="s-habits"></textarea>
+        </div>
+        <div class="card">
+          <div class="card-title"><h3>Routing & alerts</h3></div>
+          <label style="margin-top:0">When the agent answers</label>
+          <select id="s-answering_mode"><option value="after_hours">After hours only — forward during business hours</option><option value="always">Every call</option><option value="forward_all">Never — forward every call</option></select>
+          <div class="grid g2" style="gap:12px"><div><label>Office opens</label><input id="bh-start" type="time"></div><div><label>Office closes</label><input id="bh-end" type="time"></div></div>
+          <label>Office days</label><div class="chips" id="bh-days"></div>
+          <label>Forward calls to</label><input id="s-forward_number">
+          <label>Notify the manager after a call</label>
+          <div class="seg" id="notify-seg"><button data-n="all">Yes</button><button data-n="off">No</button><button data-n="priority">Depends on priority</button></div>
+          <div id="notify-prio-wrap"><label>Text when the call is at least</label>
+          <select id="s-notify_min_priority"><option value="emergency">Emergency</option><option value="high">High priority</option><option value="normal">Normal (every job request)</option></select>
+          <p class="help">The Receptionist rates every call (emergency, high, normal, low) when it writes the call log; the Dispatcher only texts you at or above this level.</p></div>
+        </div>
+        <div class="card">
+          <div class="card-title"><h3>Model & limits</h3></div>
+          <label style="margin-top:0">Reasoning effort</label>
+          <select id="s-reasoning_effort"><option value="none">None — fastest</option><option value="low">Low — recommended</option><option value="medium">Medium — slower</option></select>
+          <label>Max cost per call ($)</label><input type="number" step="0.01" id="s-per_call_budget_usd">
+          <label>Max caller turns per call</label><input type="number" id="s-max_turns">
+          <p class="help">When a call reaches its cost limit (or the turn limit), the agent stops using the model and simply takes a message, so no caller is dropped.</p>
+          <div style="border-top:1px solid var(--line);margin-top:18px;padding-top:14px">
+            <div class="card-title"><h3>Demo data</h3></div>
+            <p class="help" style="margin-top:0">Re-anchors the schedule to today and reloads a recorded “last night” of real calls.</p>
+            <button class="btn danger" id="btn-demo-reset" style="margin-top:10px">Reset demo data</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+<div class="scrim" id="scrim"></div>
+<div class="drawer" id="drawer"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

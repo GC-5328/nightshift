@@ -1,0 +1,2036 @@
+[
+ {
+  "job_id": "J0001",
+  "tech_id": "T1",
+  "day_offset": -7,
+  "slot": "PM",
+  "title": "Heat pump install",
+  "customer": "Nguyen",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0002",
+  "tech_id": "T3",
+  "day_offset": -7,
+  "slot": "AM",
+  "title": "No-heat diagnostic",
+  "customer": "Russo",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0003",
+  "tech_id": "T3",
+  "day_offset": -7,
+  "slot": "MID",
+  "title": "Furnace tune-up",
+  "customer": "Fitzgerald",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0004",
+  "tech_id": "T4",
+  "day_offset": -7,
+  "slot": "MID",
+  "title": "Battery commissioning",
+  "customer": "Brennan",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0005",
+  "tech_id": "T5",
+  "day_offset": -7,
+  "slot": "AM",
+  "title": "Thermostat replacement",
+  "customer": "Russo",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0006",
+  "tech_id": "T6",
+  "day_offset": -7,
+  "slot": "AM",
+  "title": "Lighting troubleshooting",
+  "customer": "Alvarez",
+  "town": "Guilford"
+ },
+ {
+  "job_id": "J0007",
+  "tech_id": "T6",
+  "day_offset": -7,
+  "slot": "MID",
+  "title": "EV charger install",
+  "customer": "Santos",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0008",
+  "tech_id": "T6",
+  "day_offset": -7,
+  "slot": "PM",
+  "title": "Panel upgrade",
+  "customer": "Walsh",
+  "town": "Guilford"
+ },
+ {
+  "job_id": "J0009",
+  "tech_id": "T1",
+  "day_offset": -6,
+  "slot": "AM",
+  "title": "Thermostat replacement",
+  "customer": "Nguyen",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0010",
+  "tech_id": "T3",
+  "day_offset": -6,
+  "slot": "AM",
+  "title": "Boiler service",
+  "customer": "Iannone",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0011",
+  "tech_id": "T3",
+  "day_offset": -6,
+  "slot": "MID",
+  "title": "Furnace tune-up",
+  "customer": "Kim",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0012",
+  "tech_id": "T4",
+  "day_offset": -6,
+  "slot": "MID",
+  "title": "Outlet replacement",
+  "customer": "Gupta",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0013",
+  "tech_id": "T4",
+  "day_offset": -6,
+  "slot": "PM",
+  "title": "Panel cleaning",
+  "customer": "Gupta",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0014",
+  "tech_id": "T5",
+  "day_offset": -6,
+  "slot": "AM",
+  "title": "Duct inspection",
+  "customer": "Santos",
+  "town": "Guilford"
+ },
+ {
+  "job_id": "J0015",
+  "tech_id": "T5",
+  "day_offset": -6,
+  "slot": "MID",
+  "title": "Thermostat replacement",
+  "customer": "Alvarez",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0016",
+  "tech_id": "T5",
+  "day_offset": -6,
+  "slot": "PM",
+  "title": "Thermostat replacement",
+  "customer": "Brennan",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0017",
+  "tech_id": "T1",
+  "day_offset": -5,
+  "slot": "PM",
+  "title": "Furnace tune-up",
+  "customer": "Iannone",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0018",
+  "tech_id": "T2",
+  "day_offset": -5,
+  "slot": "PM",
+  "title": "Monitoring setup",
+  "customer": "Iannone",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0019",
+  "tech_id": "T4",
+  "day_offset": -5,
+  "slot": "AM",
+  "title": "Battery commissioning",
+  "customer": "Zhang",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0020",
+  "tech_id": "T4",
+  "day_offset": -5,
+  "slot": "MID",
+  "title": "Smoke detector hardwire",
+  "customer": "DeLuca",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0021",
+  "tech_id": "T5",
+  "day_offset": -5,
+  "slot": "MID",
+  "title": "AC tune-up",
+  "customer": "Vega",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0022",
+  "tech_id": "T6",
+  "day_offset": -5,
+  "slot": "MID",
+  "title": "Outlet replacement",
+  "customer": "Zhang",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0023",
+  "tech_id": "T6",
+  "day_offset": -5,
+  "slot": "PM",
+  "title": "Lighting troubleshooting",
+  "customer": "Chen",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0024",
+  "tech_id": "T1",
+  "day_offset": -4,
+  "slot": "PM",
+  "title": "Duct inspection",
+  "customer": "Walsh",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0025",
+  "tech_id": "T2",
+  "day_offset": -4,
+  "slot": "MID",
+  "title": "Array inspection",
+  "customer": "Lombardi",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0026",
+  "tech_id": "T2",
+  "day_offset": -4,
+  "slot": "PM",
+  "title": "Outlet replacement",
+  "customer": "Murphy",
+  "town": "Wallingford"
+ },
+ {
+  "job_id": "J0027",
+  "tech_id": "T3",
+  "day_offset": -4,
+  "slot": "AM",
+  "title": "Furnace tune-up",
+  "customer": "Kim",
+  "town": "Guilford"
+ },
+ {
+  "job_id": "J0028",
+  "tech_id": "T3",
+  "day_offset": -4,
+  "slot": "PM",
+  "title": "Heat pump install",
+  "customer": "Fitzgerald",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0029",
+  "tech_id": "T4",
+  "day_offset": -4,
+  "slot": "MID",
+  "title": "Smoke detector hardwire",
+  "customer": "Iannone",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0030",
+  "tech_id": "T5",
+  "day_offset": -4,
+  "slot": "MID",
+  "title": "Duct inspection",
+  "customer": "Nguyen",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0031",
+  "tech_id": "T5",
+  "day_offset": -4,
+  "slot": "PM",
+  "title": "AC tune-up",
+  "customer": "Kim",
+  "town": "Wallingford"
+ },
+ {
+  "job_id": "J0032",
+  "tech_id": "T6",
+  "day_offset": -4,
+  "slot": "AM",
+  "title": "Lighting troubleshooting",
+  "customer": "Patel",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0033",
+  "tech_id": "T6",
+  "day_offset": -4,
+  "slot": "MID",
+  "title": "EV charger install",
+  "customer": "Kim",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0034",
+  "tech_id": "T1",
+  "day_offset": -3,
+  "slot": "AM",
+  "title": "Mini-split maintenance",
+  "customer": "Alvarez",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0035",
+  "tech_id": "T1",
+  "day_offset": -3,
+  "slot": "PM",
+  "title": "No-heat diagnostic",
+  "customer": "Johnson",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0036",
+  "tech_id": "T2",
+  "day_offset": -3,
+  "slot": "AM",
+  "title": "Outlet replacement",
+  "customer": "Iannone",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0037",
+  "tech_id": "T2",
+  "day_offset": -3,
+  "slot": "MID",
+  "title": "Array inspection",
+  "customer": "Iannone",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0038",
+  "tech_id": "T3",
+  "day_offset": -3,
+  "slot": "AM",
+  "title": "Heat pump install",
+  "customer": "O'Brien",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0039",
+  "tech_id": "T4",
+  "day_offset": -3,
+  "slot": "PM",
+  "title": "Inverter replacement",
+  "customer": "Edwards",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0040",
+  "tech_id": "T5",
+  "day_offset": -3,
+  "slot": "AM",
+  "title": "No-heat diagnostic",
+  "customer": "Zhang",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0041",
+  "tech_id": "T5",
+  "day_offset": -3,
+  "slot": "MID",
+  "title": "AC tune-up",
+  "customer": "Russo",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0042",
+  "tech_id": "T6",
+  "day_offset": -3,
+  "slot": "AM",
+  "title": "Generator interlock",
+  "customer": "Alvarez",
+  "town": "East Haven"
+ },
+ {
+  "job_id": "J0043",
+  "tech_id": "T6",
+  "day_offset": -3,
+  "slot": "MID",
+  "title": "Lighting troubleshooting",
+  "customer": "Nguyen",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0044",
+  "tech_id": "T6",
+  "day_offset": -3,
+  "slot": "PM",
+  "title": "Outlet replacement",
+  "customer": "O'Brien",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0045",
+  "tech_id": "T1",
+  "day_offset": -2,
+  "slot": "PM",
+  "title": "Mini-split maintenance",
+  "customer": "Iannone",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0046",
+  "tech_id": "T2",
+  "day_offset": -2,
+  "slot": "AM",
+  "title": "Smoke detector hardwire",
+  "customer": "Alvarez",
+  "town": "Wallingford"
+ },
+ {
+  "job_id": "J0047",
+  "tech_id": "T2",
+  "day_offset": -2,
+  "slot": "MID",
+  "title": "Lighting troubleshooting",
+  "customer": "Patel",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0048",
+  "tech_id": "T2",
+  "day_offset": -2,
+  "slot": "PM",
+  "title": "Panel upgrade",
+  "customer": "Harris",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0049",
+  "tech_id": "T4",
+  "day_offset": -2,
+  "slot": "MID",
+  "title": "Lighting troubleshooting",
+  "customer": "Fitzgerald",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0050",
+  "tech_id": "T4",
+  "day_offset": -2,
+  "slot": "PM",
+  "title": "Inverter replacement",
+  "customer": "Russo",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0051",
+  "tech_id": "T5",
+  "day_offset": -2,
+  "slot": "PM",
+  "title": "Duct inspection",
+  "customer": "Vega",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0052",
+  "tech_id": "T6",
+  "day_offset": -2,
+  "slot": "AM",
+  "title": "Smoke detector hardwire",
+  "customer": "Santos",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0053",
+  "tech_id": "T6",
+  "day_offset": -2,
+  "slot": "MID",
+  "title": "Outlet replacement",
+  "customer": "Patel",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0054",
+  "tech_id": "T6",
+  "day_offset": -2,
+  "slot": "PM",
+  "title": "EV charger install",
+  "customer": "Harris",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0055",
+  "tech_id": "T2",
+  "day_offset": -1,
+  "slot": "AM",
+  "title": "Inverter replacement",
+  "customer": "Alvarez",
+  "town": "Wallingford"
+ },
+ {
+  "job_id": "J0056",
+  "tech_id": "T3",
+  "day_offset": -1,
+  "slot": "AM",
+  "title": "Furnace tune-up",
+  "customer": "Gupta",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0057",
+  "tech_id": "T3",
+  "day_offset": -1,
+  "slot": "PM",
+  "title": "Heat pump install",
+  "customer": "Thompson",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0058",
+  "tech_id": "T4",
+  "day_offset": -1,
+  "slot": "AM",
+  "title": "Monitoring setup",
+  "customer": "Thompson",
+  "town": "East Haven"
+ },
+ {
+  "job_id": "J0059",
+  "tech_id": "T4",
+  "day_offset": -1,
+  "slot": "MID",
+  "title": "Lighting troubleshooting",
+  "customer": "Alvarez",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0060",
+  "tech_id": "T4",
+  "day_offset": -1,
+  "slot": "PM",
+  "title": "EV charger install",
+  "customer": "Vega",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0061",
+  "tech_id": "T5",
+  "day_offset": -1,
+  "slot": "AM",
+  "title": "Duct inspection",
+  "customer": "Quinn",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0062",
+  "tech_id": "T5",
+  "day_offset": -1,
+  "slot": "PM",
+  "title": "Heat pump install",
+  "customer": "DeLuca",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0063",
+  "tech_id": "T6",
+  "day_offset": -1,
+  "slot": "AM",
+  "title": "Panel upgrade",
+  "customer": "Fitzgerald",
+  "town": "Wallingford"
+ },
+ {
+  "job_id": "J0064",
+  "tech_id": "T6",
+  "day_offset": -1,
+  "slot": "MID",
+  "title": "Smoke detector hardwire",
+  "customer": "Young",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0065",
+  "tech_id": "T1",
+  "day_offset": 0,
+  "slot": "AM",
+  "title": "Heat pump install",
+  "customer": "Patel",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0066",
+  "tech_id": "T1",
+  "day_offset": 0,
+  "slot": "MID",
+  "title": "Furnace tune-up",
+  "customer": "Lombardi",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0067",
+  "tech_id": "T1",
+  "day_offset": 0,
+  "slot": "PM",
+  "title": "AC tune-up",
+  "customer": "Santos",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0068",
+  "tech_id": "T2",
+  "day_offset": 0,
+  "slot": "MID",
+  "title": "Panel upgrade",
+  "customer": "Vega",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0069",
+  "tech_id": "T3",
+  "day_offset": 0,
+  "slot": "AM",
+  "title": "Furnace tune-up",
+  "customer": "Johnson",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0070",
+  "tech_id": "T3",
+  "day_offset": 0,
+  "slot": "PM",
+  "title": "Furnace tune-up",
+  "customer": "Iannone",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0071",
+  "tech_id": "T4",
+  "day_offset": 0,
+  "slot": "MID",
+  "title": "Panel upgrade",
+  "customer": "Russo",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0072",
+  "tech_id": "T5",
+  "day_offset": 0,
+  "slot": "AM",
+  "title": "AC tune-up",
+  "customer": "DeLuca",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0073",
+  "tech_id": "T5",
+  "day_offset": 0,
+  "slot": "MID",
+  "title": "AC tune-up",
+  "customer": "Thompson",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0074",
+  "tech_id": "T5",
+  "day_offset": 0,
+  "slot": "PM",
+  "title": "Furnace tune-up",
+  "customer": "DeLuca",
+  "town": "Guilford"
+ },
+ {
+  "job_id": "J0075",
+  "tech_id": "T6",
+  "day_offset": 0,
+  "slot": "MID",
+  "title": "Generator interlock",
+  "customer": "Brennan",
+  "town": "Wallingford"
+ },
+ {
+  "job_id": "J0076",
+  "tech_id": "T6",
+  "day_offset": 0,
+  "slot": "PM",
+  "title": "Outlet replacement",
+  "customer": "Young",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0077",
+  "tech_id": "T1",
+  "day_offset": 1,
+  "slot": "AM",
+  "title": "No-heat diagnostic",
+  "customer": "Johnson",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0078",
+  "tech_id": "T1",
+  "day_offset": 1,
+  "slot": "PM",
+  "title": "Thermostat replacement",
+  "customer": "Kim",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0079",
+  "tech_id": "T2",
+  "day_offset": 1,
+  "slot": "MID",
+  "title": "Array inspection",
+  "customer": "Young",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0080",
+  "tech_id": "T3",
+  "day_offset": 1,
+  "slot": "AM",
+  "title": "AC tune-up",
+  "customer": "Fitzgerald",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0081",
+  "tech_id": "T3",
+  "day_offset": 1,
+  "slot": "PM",
+  "title": "No-heat diagnostic",
+  "customer": "Quinn",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0082",
+  "tech_id": "T4",
+  "day_offset": 1,
+  "slot": "MID",
+  "title": "Outlet replacement",
+  "customer": "Chen",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0083",
+  "tech_id": "T5",
+  "day_offset": 1,
+  "slot": "MID",
+  "title": "Boiler service",
+  "customer": "Kim",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0084",
+  "tech_id": "T5",
+  "day_offset": 1,
+  "slot": "PM",
+  "title": "Thermostat replacement",
+  "customer": "Patel",
+  "town": "Guilford"
+ },
+ {
+  "job_id": "J0085",
+  "tech_id": "T6",
+  "day_offset": 1,
+  "slot": "AM",
+  "title": "Outlet replacement",
+  "customer": "Thompson",
+  "town": "Guilford"
+ },
+ {
+  "job_id": "J0086",
+  "tech_id": "T6",
+  "day_offset": 1,
+  "slot": "PM",
+  "title": "Generator interlock",
+  "customer": "Lombardi",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0087",
+  "tech_id": "T2",
+  "day_offset": 2,
+  "slot": "AM",
+  "title": "Generator interlock",
+  "customer": "Johnson",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0088",
+  "tech_id": "T2",
+  "day_offset": 2,
+  "slot": "PM",
+  "title": "Inverter replacement",
+  "customer": "Gupta",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0089",
+  "tech_id": "T3",
+  "day_offset": 2,
+  "slot": "PM",
+  "title": "Mini-split maintenance",
+  "customer": "Murphy",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0090",
+  "tech_id": "T5",
+  "day_offset": 2,
+  "slot": "PM",
+  "title": "Furnace tune-up",
+  "customer": "Johnson",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0091",
+  "tech_id": "T6",
+  "day_offset": 2,
+  "slot": "AM",
+  "title": "EV charger install",
+  "customer": "Young",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0092",
+  "tech_id": "T6",
+  "day_offset": 2,
+  "slot": "PM",
+  "title": "EV charger install",
+  "customer": "Alvarez",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0093",
+  "tech_id": "T1",
+  "day_offset": 3,
+  "slot": "AM",
+  "title": "Boiler service",
+  "customer": "Walsh",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0094",
+  "tech_id": "T4",
+  "day_offset": 3,
+  "slot": "AM",
+  "title": "Generator interlock",
+  "customer": "Brennan",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0095",
+  "tech_id": "T4",
+  "day_offset": 3,
+  "slot": "PM",
+  "title": "Generator interlock",
+  "customer": "Murphy",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0096",
+  "tech_id": "T5",
+  "day_offset": 3,
+  "slot": "PM",
+  "title": "AC tune-up",
+  "customer": "Walsh",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0097",
+  "tech_id": "T6",
+  "day_offset": 3,
+  "slot": "MID",
+  "title": "Smoke detector hardwire",
+  "customer": "Thompson",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0098",
+  "tech_id": "T1",
+  "day_offset": 4,
+  "slot": "AM",
+  "title": "Thermostat replacement",
+  "customer": "Kim",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0099",
+  "tech_id": "T1",
+  "day_offset": 4,
+  "slot": "MID",
+  "title": "Furnace tune-up",
+  "customer": "Walsh",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0100",
+  "tech_id": "T1",
+  "day_offset": 4,
+  "slot": "PM",
+  "title": "Duct inspection",
+  "customer": "Harris",
+  "town": "Wallingford"
+ },
+ {
+  "job_id": "J0101",
+  "tech_id": "T2",
+  "day_offset": 4,
+  "slot": "MID",
+  "title": "Monitoring setup",
+  "customer": "Johnson",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0102",
+  "tech_id": "T2",
+  "day_offset": 4,
+  "slot": "PM",
+  "title": "Panel cleaning",
+  "customer": "Kim",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0103",
+  "tech_id": "T3",
+  "day_offset": 4,
+  "slot": "AM",
+  "title": "Mini-split maintenance",
+  "customer": "Iannone",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0104",
+  "tech_id": "T4",
+  "day_offset": 4,
+  "slot": "AM",
+  "title": "Panel cleaning",
+  "customer": "Vega",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0105",
+  "tech_id": "T6",
+  "day_offset": 4,
+  "slot": "AM",
+  "title": "Generator interlock",
+  "customer": "Chen",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0106",
+  "tech_id": "T1",
+  "day_offset": 5,
+  "slot": "PM",
+  "title": "Boiler service",
+  "customer": "Brennan",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0107",
+  "tech_id": "T2",
+  "day_offset": 5,
+  "slot": "MID",
+  "title": "Panel upgrade",
+  "customer": "Edwards",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0108",
+  "tech_id": "T3",
+  "day_offset": 5,
+  "slot": "PM",
+  "title": "Boiler service",
+  "customer": "Lombardi",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0109",
+  "tech_id": "T4",
+  "day_offset": 5,
+  "slot": "AM",
+  "title": "Smoke detector hardwire",
+  "customer": "Chen",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0110",
+  "tech_id": "T4",
+  "day_offset": 5,
+  "slot": "MID",
+  "title": "Outlet replacement",
+  "customer": "Murphy",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0111",
+  "tech_id": "T6",
+  "day_offset": 5,
+  "slot": "AM",
+  "title": "Panel upgrade",
+  "customer": "O'Brien",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0112",
+  "tech_id": "T6",
+  "day_offset": 5,
+  "slot": "MID",
+  "title": "Smoke detector hardwire",
+  "customer": "Walsh",
+  "town": "East Haven"
+ },
+ {
+  "job_id": "J0113",
+  "tech_id": "T6",
+  "day_offset": 5,
+  "slot": "PM",
+  "title": "Outlet replacement",
+  "customer": "Quinn",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0114",
+  "tech_id": "T1",
+  "day_offset": 6,
+  "slot": "AM",
+  "title": "Mini-split maintenance",
+  "customer": "Chen",
+  "town": "East Haven"
+ },
+ {
+  "job_id": "J0115",
+  "tech_id": "T2",
+  "day_offset": 6,
+  "slot": "AM",
+  "title": "Array inspection",
+  "customer": "O'Brien",
+  "town": "Wallingford"
+ },
+ {
+  "job_id": "J0116",
+  "tech_id": "T2",
+  "day_offset": 6,
+  "slot": "MID",
+  "title": "Panel cleaning",
+  "customer": "Young",
+  "town": "Guilford"
+ },
+ {
+  "job_id": "J0117",
+  "tech_id": "T2",
+  "day_offset": 6,
+  "slot": "PM",
+  "title": "Battery commissioning",
+  "customer": "Lombardi",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0118",
+  "tech_id": "T3",
+  "day_offset": 6,
+  "slot": "AM",
+  "title": "AC tune-up",
+  "customer": "Kim",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0119",
+  "tech_id": "T4",
+  "day_offset": 6,
+  "slot": "AM",
+  "title": "Monitoring setup",
+  "customer": "Alvarez",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0120",
+  "tech_id": "T5",
+  "day_offset": 6,
+  "slot": "PM",
+  "title": "Furnace tune-up",
+  "customer": "Young",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0121",
+  "tech_id": "T6",
+  "day_offset": 6,
+  "slot": "AM",
+  "title": "Generator interlock",
+  "customer": "Edwards",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0122",
+  "tech_id": "T6",
+  "day_offset": 6,
+  "slot": "PM",
+  "title": "Panel upgrade",
+  "customer": "DeLuca",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0123",
+  "tech_id": "T1",
+  "day_offset": 7,
+  "slot": "AM",
+  "title": "Mini-split maintenance",
+  "customer": "Gupta",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0124",
+  "tech_id": "T2",
+  "day_offset": 7,
+  "slot": "AM",
+  "title": "EV charger install",
+  "customer": "Johnson",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0125",
+  "tech_id": "T4",
+  "day_offset": 7,
+  "slot": "AM",
+  "title": "Battery commissioning",
+  "customer": "Fitzgerald",
+  "town": "East Haven"
+ },
+ {
+  "job_id": "J0126",
+  "tech_id": "T4",
+  "day_offset": 7,
+  "slot": "PM",
+  "title": "Panel cleaning",
+  "customer": "Vega",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0127",
+  "tech_id": "T1",
+  "day_offset": 8,
+  "slot": "AM",
+  "title": "No-heat diagnostic",
+  "customer": "Fitzgerald",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0128",
+  "tech_id": "T3",
+  "day_offset": 8,
+  "slot": "MID",
+  "title": "No-heat diagnostic",
+  "customer": "Harris",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0129",
+  "tech_id": "T4",
+  "day_offset": 8,
+  "slot": "PM",
+  "title": "Array inspection",
+  "customer": "Patel",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0130",
+  "tech_id": "T5",
+  "day_offset": 8,
+  "slot": "AM",
+  "title": "Mini-split maintenance",
+  "customer": "DeLuca",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0131",
+  "tech_id": "T6",
+  "day_offset": 8,
+  "slot": "MID",
+  "title": "Lighting troubleshooting",
+  "customer": "Gupta",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0132",
+  "tech_id": "T6",
+  "day_offset": 8,
+  "slot": "PM",
+  "title": "Smoke detector hardwire",
+  "customer": "Iannone",
+  "town": "Guilford"
+ },
+ {
+  "job_id": "J0133",
+  "tech_id": "T1",
+  "day_offset": 9,
+  "slot": "MID",
+  "title": "Thermostat replacement",
+  "customer": "Walsh",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0134",
+  "tech_id": "T3",
+  "day_offset": 9,
+  "slot": "MID",
+  "title": "No-heat diagnostic",
+  "customer": "Brennan",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0135",
+  "tech_id": "T4",
+  "day_offset": 9,
+  "slot": "MID",
+  "title": "Array inspection",
+  "customer": "Fitzgerald",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0136",
+  "tech_id": "T6",
+  "day_offset": 9,
+  "slot": "PM",
+  "title": "Lighting troubleshooting",
+  "customer": "Russo",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0137",
+  "tech_id": "T1",
+  "day_offset": 10,
+  "slot": "AM",
+  "title": "No-heat diagnostic",
+  "customer": "Vega",
+  "town": "Wallingford"
+ },
+ {
+  "job_id": "J0138",
+  "tech_id": "T1",
+  "day_offset": 10,
+  "slot": "MID",
+  "title": "Boiler service",
+  "customer": "Quinn",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0139",
+  "tech_id": "T1",
+  "day_offset": 10,
+  "slot": "PM",
+  "title": "Mini-split maintenance",
+  "customer": "Thompson",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0140",
+  "tech_id": "T3",
+  "day_offset": 10,
+  "slot": "AM",
+  "title": "Thermostat replacement",
+  "customer": "Kim",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0141",
+  "tech_id": "T4",
+  "day_offset": 10,
+  "slot": "PM",
+  "title": "Lighting troubleshooting",
+  "customer": "DeLuca",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0142",
+  "tech_id": "T5",
+  "day_offset": 10,
+  "slot": "MID",
+  "title": "Boiler service",
+  "customer": "Walsh",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0143",
+  "tech_id": "T5",
+  "day_offset": 10,
+  "slot": "PM",
+  "title": "AC tune-up",
+  "customer": "Iannone",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0144",
+  "tech_id": "T1",
+  "day_offset": 11,
+  "slot": "AM",
+  "title": "AC tune-up",
+  "customer": "Vega",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0145",
+  "tech_id": "T2",
+  "day_offset": 11,
+  "slot": "AM",
+  "title": "Array inspection",
+  "customer": "Kim",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0146",
+  "tech_id": "T2",
+  "day_offset": 11,
+  "slot": "MID",
+  "title": "Generator interlock",
+  "customer": "Fitzgerald",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0147",
+  "tech_id": "T3",
+  "day_offset": 11,
+  "slot": "AM",
+  "title": "Heat pump install",
+  "customer": "Young",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0148",
+  "tech_id": "T3",
+  "day_offset": 11,
+  "slot": "PM",
+  "title": "Mini-split maintenance",
+  "customer": "Harris",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0149",
+  "tech_id": "T4",
+  "day_offset": 11,
+  "slot": "PM",
+  "title": "EV charger install",
+  "customer": "Quinn",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0150",
+  "tech_id": "T2",
+  "day_offset": 12,
+  "slot": "AM",
+  "title": "Array inspection",
+  "customer": "Walsh",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0151",
+  "tech_id": "T2",
+  "day_offset": 12,
+  "slot": "MID",
+  "title": "Smoke detector hardwire",
+  "customer": "Russo",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0152",
+  "tech_id": "T2",
+  "day_offset": 12,
+  "slot": "PM",
+  "title": "Generator interlock",
+  "customer": "Iannone",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0153",
+  "tech_id": "T4",
+  "day_offset": 12,
+  "slot": "MID",
+  "title": "Generator interlock",
+  "customer": "Murphy",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0154",
+  "tech_id": "T5",
+  "day_offset": 12,
+  "slot": "PM",
+  "title": "Duct inspection",
+  "customer": "Johnson",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0155",
+  "tech_id": "T6",
+  "day_offset": 12,
+  "slot": "AM",
+  "title": "Smoke detector hardwire",
+  "customer": "Santos",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0156",
+  "tech_id": "T1",
+  "day_offset": 13,
+  "slot": "MID",
+  "title": "No-heat diagnostic",
+  "customer": "Walsh",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0157",
+  "tech_id": "T2",
+  "day_offset": 13,
+  "slot": "AM",
+  "title": "Lighting troubleshooting",
+  "customer": "Fitzgerald",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0158",
+  "tech_id": "T2",
+  "day_offset": 13,
+  "slot": "PM",
+  "title": "Battery commissioning",
+  "customer": "Johnson",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0159",
+  "tech_id": "T4",
+  "day_offset": 13,
+  "slot": "MID",
+  "title": "Inverter replacement",
+  "customer": "Young",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0160",
+  "tech_id": "T5",
+  "day_offset": 13,
+  "slot": "AM",
+  "title": "Heat pump install",
+  "customer": "O'Brien",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0161",
+  "tech_id": "T1",
+  "day_offset": 14,
+  "slot": "MID",
+  "title": "Thermostat replacement",
+  "customer": "Alvarez",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0162",
+  "tech_id": "T3",
+  "day_offset": 14,
+  "slot": "MID",
+  "title": "Thermostat replacement",
+  "customer": "Alvarez",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0163",
+  "tech_id": "T4",
+  "day_offset": 14,
+  "slot": "AM",
+  "title": "Lighting troubleshooting",
+  "customer": "Russo",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0164",
+  "tech_id": "T5",
+  "day_offset": 14,
+  "slot": "AM",
+  "title": "Furnace tune-up",
+  "customer": "Nguyen",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0165",
+  "tech_id": "T5",
+  "day_offset": 14,
+  "slot": "MID",
+  "title": "Duct inspection",
+  "customer": "Gupta",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0166",
+  "tech_id": "T1",
+  "day_offset": 15,
+  "slot": "PM",
+  "title": "Heat pump install",
+  "customer": "Gupta",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0167",
+  "tech_id": "T3",
+  "day_offset": 15,
+  "slot": "MID",
+  "title": "Heat pump install",
+  "customer": "Johnson",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0168",
+  "tech_id": "T6",
+  "day_offset": 15,
+  "slot": "MID",
+  "title": "Outlet replacement",
+  "customer": "Kim",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0169",
+  "tech_id": "T6",
+  "day_offset": 15,
+  "slot": "PM",
+  "title": "Lighting troubleshooting",
+  "customer": "Quinn",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0170",
+  "tech_id": "T4",
+  "day_offset": 16,
+  "slot": "PM",
+  "title": "Array inspection",
+  "customer": "Russo",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0171",
+  "tech_id": "T5",
+  "day_offset": 16,
+  "slot": "MID",
+  "title": "AC tune-up",
+  "customer": "Fitzgerald",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0172",
+  "tech_id": "T1",
+  "day_offset": 17,
+  "slot": "AM",
+  "title": "Duct inspection",
+  "customer": "DeLuca",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0173",
+  "tech_id": "T1",
+  "day_offset": 17,
+  "slot": "PM",
+  "title": "Thermostat replacement",
+  "customer": "Young",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0174",
+  "tech_id": "T5",
+  "day_offset": 17,
+  "slot": "MID",
+  "title": "Heat pump install",
+  "customer": "Kim",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0175",
+  "tech_id": "T6",
+  "day_offset": 17,
+  "slot": "PM",
+  "title": "Smoke detector hardwire",
+  "customer": "Brennan",
+  "town": "Branford"
+ },
+ {
+  "job_id": "J0176",
+  "tech_id": "T1",
+  "day_offset": 18,
+  "slot": "PM",
+  "title": "Boiler service",
+  "customer": "Patel",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0177",
+  "tech_id": "T2",
+  "day_offset": 18,
+  "slot": "AM",
+  "title": "EV charger install",
+  "customer": "Patel",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0178",
+  "tech_id": "T2",
+  "day_offset": 18,
+  "slot": "MID",
+  "title": "Monitoring setup",
+  "customer": "Brennan",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0179",
+  "tech_id": "T2",
+  "day_offset": 18,
+  "slot": "PM",
+  "title": "Array inspection",
+  "customer": "Gupta",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0180",
+  "tech_id": "T6",
+  "day_offset": 18,
+  "slot": "MID",
+  "title": "Generator interlock",
+  "customer": "Kim",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0181",
+  "tech_id": "T2",
+  "day_offset": 19,
+  "slot": "AM",
+  "title": "Generator interlock",
+  "customer": "Young",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0182",
+  "tech_id": "T2",
+  "day_offset": 19,
+  "slot": "MID",
+  "title": "Monitoring setup",
+  "customer": "Nguyen",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0183",
+  "tech_id": "T3",
+  "day_offset": 19,
+  "slot": "MID",
+  "title": "Mini-split maintenance",
+  "customer": "Santos",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0184",
+  "tech_id": "T3",
+  "day_offset": 19,
+  "slot": "PM",
+  "title": "Boiler service",
+  "customer": "Zhang",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0185",
+  "tech_id": "T4",
+  "day_offset": 19,
+  "slot": "AM",
+  "title": "Panel cleaning",
+  "customer": "Quinn",
+  "town": "Wallingford"
+ },
+ {
+  "job_id": "J0186",
+  "tech_id": "T5",
+  "day_offset": 19,
+  "slot": "MID",
+  "title": "Thermostat replacement",
+  "customer": "O'Brien",
+  "town": "Guilford"
+ },
+ {
+  "job_id": "J0187",
+  "tech_id": "T6",
+  "day_offset": 19,
+  "slot": "PM",
+  "title": "Lighting troubleshooting",
+  "customer": "Fitzgerald",
+  "town": "Cheshire"
+ },
+ {
+  "job_id": "J0188",
+  "tech_id": "T3",
+  "day_offset": 20,
+  "slot": "MID",
+  "title": "Boiler service",
+  "customer": "Brennan",
+  "town": "East Haven"
+ },
+ {
+  "job_id": "J0189",
+  "tech_id": "T4",
+  "day_offset": 20,
+  "slot": "AM",
+  "title": "Monitoring setup",
+  "customer": "Lombardi",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0190",
+  "tech_id": "T4",
+  "day_offset": 20,
+  "slot": "PM",
+  "title": "Array inspection",
+  "customer": "Russo",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0191",
+  "tech_id": "T6",
+  "day_offset": 20,
+  "slot": "MID",
+  "title": "EV charger install",
+  "customer": "Gupta",
+  "town": "Wallingford"
+ },
+ {
+  "job_id": "J0192",
+  "tech_id": "T1",
+  "day_offset": 21,
+  "slot": "PM",
+  "title": "Furnace tune-up",
+  "customer": "Patel",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0193",
+  "tech_id": "T2",
+  "day_offset": 21,
+  "slot": "AM",
+  "title": "Generator interlock",
+  "customer": "Edwards",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0194",
+  "tech_id": "T4",
+  "day_offset": 21,
+  "slot": "AM",
+  "title": "Generator interlock",
+  "customer": "Lombardi",
+  "town": "Guilford"
+ },
+ {
+  "job_id": "J0195",
+  "tech_id": "T4",
+  "day_offset": 21,
+  "slot": "PM",
+  "title": "Inverter replacement",
+  "customer": "Johnson",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0196",
+  "tech_id": "T6",
+  "day_offset": 21,
+  "slot": "MID",
+  "title": "Generator interlock",
+  "customer": "Harris",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0197",
+  "tech_id": "T1",
+  "day_offset": 22,
+  "slot": "AM",
+  "title": "Thermostat replacement",
+  "customer": "Edwards",
+  "town": "East Haven"
+ },
+ {
+  "job_id": "J0198",
+  "tech_id": "T2",
+  "day_offset": 22,
+  "slot": "PM",
+  "title": "Panel cleaning",
+  "customer": "Harris",
+  "town": "Wallingford"
+ },
+ {
+  "job_id": "J0199",
+  "tech_id": "T3",
+  "day_offset": 22,
+  "slot": "AM",
+  "title": "Duct inspection",
+  "customer": "Quinn",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0200",
+  "tech_id": "T3",
+  "day_offset": 22,
+  "slot": "PM",
+  "title": "Mini-split maintenance",
+  "customer": "Brennan",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0201",
+  "tech_id": "T5",
+  "day_offset": 22,
+  "slot": "AM",
+  "title": "Mini-split maintenance",
+  "customer": "Vega",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0202",
+  "tech_id": "T5",
+  "day_offset": 22,
+  "slot": "PM",
+  "title": "Mini-split maintenance",
+  "customer": "Zhang",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0203",
+  "tech_id": "T6",
+  "day_offset": 22,
+  "slot": "PM",
+  "title": "Generator interlock",
+  "customer": "O'Brien",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0204",
+  "tech_id": "T1",
+  "day_offset": 23,
+  "slot": "MID",
+  "title": "Mini-split maintenance",
+  "customer": "Patel",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0205",
+  "tech_id": "T1",
+  "day_offset": 23,
+  "slot": "PM",
+  "title": "Heat pump install",
+  "customer": "Young",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0206",
+  "tech_id": "T2",
+  "day_offset": 23,
+  "slot": "PM",
+  "title": "Lighting troubleshooting",
+  "customer": "Iannone",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0207",
+  "tech_id": "T3",
+  "day_offset": 23,
+  "slot": "MID",
+  "title": "Thermostat replacement",
+  "customer": "Fitzgerald",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0208",
+  "tech_id": "T4",
+  "day_offset": 23,
+  "slot": "AM",
+  "title": "Generator interlock",
+  "customer": "Kim",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0209",
+  "tech_id": "T6",
+  "day_offset": 23,
+  "slot": "AM",
+  "title": "Generator interlock",
+  "customer": "Patel",
+  "town": "North Haven"
+ },
+ {
+  "job_id": "J0210",
+  "tech_id": "T1",
+  "day_offset": 24,
+  "slot": "MID",
+  "title": "Boiler service",
+  "customer": "Alvarez",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0211",
+  "tech_id": "T1",
+  "day_offset": 24,
+  "slot": "PM",
+  "title": "Mini-split maintenance",
+  "customer": "Nguyen",
+  "town": "New Haven"
+ },
+ {
+  "job_id": "J0212",
+  "tech_id": "T3",
+  "day_offset": 24,
+  "slot": "AM",
+  "title": "Thermostat replacement",
+  "customer": "Patel",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0213",
+  "tech_id": "T4",
+  "day_offset": 24,
+  "slot": "PM",
+  "title": "Smoke detector hardwire",
+  "customer": "Young",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0214",
+  "tech_id": "T5",
+  "day_offset": 24,
+  "slot": "PM",
+  "title": "Thermostat replacement",
+  "customer": "Russo",
+  "town": "Guilford"
+ },
+ {
+  "job_id": "J0215",
+  "tech_id": "T3",
+  "day_offset": 25,
+  "slot": "PM",
+  "title": "AC tune-up",
+  "customer": "Russo",
+  "town": "Milford"
+ },
+ {
+  "job_id": "J0216",
+  "tech_id": "T5",
+  "day_offset": 25,
+  "slot": "MID",
+  "title": "Furnace tune-up",
+  "customer": "Russo",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0217",
+  "tech_id": "T5",
+  "day_offset": 25,
+  "slot": "PM",
+  "title": "Mini-split maintenance",
+  "customer": "Murphy",
+  "town": "West Haven"
+ },
+ {
+  "job_id": "J0218",
+  "tech_id": "T2",
+  "day_offset": 26,
+  "slot": "AM",
+  "title": "Battery commissioning",
+  "customer": "Brennan",
+  "town": "East Haven"
+ },
+ {
+  "job_id": "J0219",
+  "tech_id": "T2",
+  "day_offset": 26,
+  "slot": "MID",
+  "title": "Panel upgrade",
+  "customer": "Johnson",
+  "town": "Woodbridge"
+ },
+ {
+  "job_id": "J0220",
+  "tech_id": "T5",
+  "day_offset": 26,
+  "slot": "PM",
+  "title": "Thermostat replacement",
+  "customer": "Thompson",
+  "town": "Madison"
+ },
+ {
+  "job_id": "J0221",
+  "tech_id": "T1",
+  "day_offset": 27,
+  "slot": "AM",
+  "title": "Mini-split maintenance",
+  "customer": "Nguyen",
+  "town": "Hamden"
+ },
+ {
+  "job_id": "J0222",
+  "tech_id": "T1",
+  "day_offset": 27,
+  "slot": "MID",
+  "title": "Thermostat replacement",
+  "customer": "Brennan",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0223",
+  "tech_id": "T2",
+  "day_offset": 27,
+  "slot": "AM",
+  "title": "Panel cleaning",
+  "customer": "Russo",
+  "town": "Orange"
+ },
+ {
+  "job_id": "J0224",
+  "tech_id": "T3",
+  "day_offset": 27,
+  "slot": "AM",
+  "title": "Duct inspection",
+  "customer": "Harris",
+  "town": "East Haven"
+ },
+ {
+  "job_id": "J0225",
+  "tech_id": "T4",
+  "day_offset": 27,
+  "slot": "MID",
+  "title": "Battery commissioning",
+  "customer": "Johnson",
+  "town": "East Haven"
+ },
+ {
+  "job_id": "J0226",
+  "tech_id": "T4",
+  "day_offset": 27,
+  "slot": "PM",
+  "title": "Panel cleaning",
+  "customer": "Russo",
+  "town": "Orange"
+ }
+]

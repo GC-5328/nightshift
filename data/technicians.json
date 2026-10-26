@@ -1,0 +1,119 @@
+[
+ {
+  "id": "T1",
+  "name": "Marcus Reed",
+  "trades": [
+   "hvac"
+  ],
+  "level": "senior",
+  "home_town": "Hamden",
+  "phone": "(203) 555-0131",
+  "work_days": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri"
+  ],
+  "notes": "Boilers and older oil/gas furnaces.",
+  "color": "#2a78d6"
+ },
+ {
+  "id": "T2",
+  "name": "Priya Shah",
+  "trades": [
+   "electrical",
+   "solar"
+  ],
+  "level": "senior",
+  "home_town": "West Haven",
+  "phone": "(203) 555-0132",
+  "work_days": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri"
+  ],
+  "notes": "Licensed E-1; panels, service upgrades, solar interconnects.",
+  "color": "#eb6834"
+ },
+ {
+  "id": "T3",
+  "name": "Dave Kowalski",
+  "trades": [
+   "hvac"
+  ],
+  "level": "journeyman",
+  "home_town": "Branford",
+  "phone": "(203) 555-0133",
+  "work_days": [
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat"
+  ],
+  "notes": "Heat pumps and mini-splits.",
+  "color": "#1baf7a"
+ },
+ {
+  "id": "T4",
+  "name": "Luis Ortega",
+  "trades": [
+   "solar",
+   "electrical"
+  ],
+  "level": "senior",
+  "home_town": "Wallingford",
+  "phone": "(203) 555-0134",
+  "work_days": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri"
+  ],
+  "notes": "Inverters, batteries, roof arrays.",
+  "color": "#eda100"
+ },
+ {
+  "id": "T5",
+  "name": "Jenna Brooks",
+  "trades": [
+   "hvac"
+  ],
+  "level": "apprentice",
+  "home_town": "Milford",
+  "phone": "(203) 555-0135",
+  "work_days": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri"
+  ],
+  "notes": "Maintenance and simple no-cool/no-heat diagnostics.",
+  "color": "#e87ba4"
+ },
+ {
+  "id": "T6",
+  "name": "Sam Okafor",
+  "trades": [
+   "electrical"
+  ],
+  "level": "journeyman",
+  "home_town": "New Haven",
+  "phone": "(203) 555-0136",
+  "work_days": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat"
+  ],
+  "notes": "Troubleshooting, outlets, breakers, EV chargers.",
+  "color": "#008300"
+ }
+]

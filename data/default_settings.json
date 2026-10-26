@@ -1,0 +1,48 @@
+{
+  "agent_enabled": true,
+  "greeting": "This call will be recorded for quality and training purposes. Thank you for calling HVAC Co Air Conditioning and Heating. This is {agent_name}. Can I get your full name in case we get disconnected?",
+  "agent_name": "Lucy",
+  "persona": "Warm and friendly after-hours customer service representative. Calm, patient, plain words, short sentences.",
+  "habits": "Use the caller's first name once you know it. Read phone numbers back digit by digit. Ask one question at a time. Use brief natural acknowledgments like 'Got it', 'Okay' or 'Mm-hmm'.",
+  "voice_name": "",
+  "voice_lang": "en-US",
+  "speech_rate": 1.0,
+  "speech_pitch": 1.0,
+  "response_delay_ms": 300,
+  "use_fillers": true,
+  "fillers": [
+    "One moment while I check that.",
+    "Let me look at the schedule."
+  ],
+  "answering_mode": "after_hours",
+  "business_hours": {
+    "days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri"
+    ],
+    "start": "08:00",
+    "end": "17:00"
+  },
+  "forward_number": "(203) 555-0100",
+  "notify_manager": "priority",
+  "reasoning_effort": "low",
+  "per_call_budget_usd": 0.05,
+  "max_turns": 30,
+  "pronunciations": [
+    {
+      "word": "HVAC",
+      "say": "H-vack"
+    },
+    {
+      "word": "HVAC Co",
+      "say": "H-vack Co"
+    }
+  ],
+  "reminder_after_s": 10,
+  "reminder_max": 1,
+  "max_call_minutes": 34,
+  "notify_min_priority": "high"
+}

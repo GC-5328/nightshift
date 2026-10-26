@@ -1,0 +1,18 @@
+[
+  {"key": "caller_name", "label": "Customer name", "description": "Full name of the caller.", "required": true},
+  {"key": "service_address", "label": "Address", "description": "Street address where the work is needed.", "required": true},
+  {"key": "town", "label": "Town", "description": "Town or city of the service address.", "required": true},
+  {"key": "existing_customer", "label": "Customer status", "description": "existing, new, or unsure.", "required": true},
+  {"key": "service_needed", "label": "Service needed", "description": "repair, replace (new equipment / upgrade), maintenance, or question.", "required": true},
+  {"key": "trade", "label": "Trade", "description": "One of: hvac, electrical, solar, other.", "required": true},
+  {"key": "equipment", "label": "Equipment", "description": "Type of equipment of concern, with brand and age if known.", "required": false},
+  {"key": "heating_fuel", "label": "Heating fuel", "description": "oil, natural gas, electricity, or other (for replacements and upgrades).", "required": false},
+  {"key": "problem_summary", "label": "Problem", "description": "The caller's problem in their own words, as close to word-for-word as possible.", "required": true},
+  {"key": "urgency", "label": "Urgency", "description": "One of: emergency, urgent, routine.", "required": true},
+  {"key": "safety_concerns", "label": "Safety concerns", "description": "Gas smell, CO alarm, sparks, water near electrical, vulnerable people without heat/cooling, etc. 'none' if none.", "required": false},
+  {"key": "callback_number", "label": "Customer number", "description": "Best number to reach the customer, as +1 followed by 10 digits.", "required": true},
+  {"key": "callback_time", "label": "Best time to call", "description": "The best time to call the customer back.", "required": false},
+  {"key": "customer_availability", "label": "Home for a visit", "description": "When the caller can be home for a visit.", "required": false},
+  {"key": "access_notes", "label": "Access notes", "description": "Pets, gate codes, parking, which door, etc.", "required": false},
+  {"key": "message", "label": "Message", "description": "For non-service calls: who they want and why.", "required": false}
+]

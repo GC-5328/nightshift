@@ -1,0 +1,17 @@
+{
+  "tag": "gas_retest",
+  "effort": "low",
+  "calls": 3,
+  "accuracy": 1.0,
+  "avg_cost_usd": 0.00045,
+  "avg_input": 6485,
+  "avg_cached": 5322,
+  "avg_output": 559,
+  "avg_turn_s": 0.16,
+  "avg_requests": 2.0,
+  "call_ids": [
+    10,
+    11,
+    12
+  ]
+}

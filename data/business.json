@@ -1,0 +1,141 @@
+{
+  "company_name": "HVAC Co",
+  "trades": [
+    "hvac",
+    "electrical",
+    "solar"
+  ],
+  "trade_labels": {
+    "hvac": "Heating & Cooling",
+    "electrical": "Electrical",
+    "solar": "Solar"
+  },
+  "office_phone": "(203) 555-0100",
+  "manager": {
+    "name": "Dana Whitfield",
+    "phone": "(203) 555-0188"
+  },
+  "on_call": {
+    "hvac": {
+      "tech_id": "T1",
+      "phone": "(203) 555-0131"
+    },
+    "electrical": {
+      "tech_id": "T6",
+      "phone": "(203) 555-0136"
+    },
+    "solar": {
+      "tech_id": "T4",
+      "phone": "(203) 555-0134"
+    }
+  },
+  "fees": {
+    "diagnostic_fee": "$89 diagnostic visit, credited toward the repair if you go ahead",
+    "after_hours_emergency_fee": "$149 after-hours emergency dispatch fee"
+  },
+  "policies": [
+    "A technician or the office always calls back to confirm the appointment before anyone is dispatched.",
+    "Callbacks for non-emergency calls start at 7:30 AM.",
+    "We never quote repair prices over the phone; only the fixed fees listed here.",
+    "We serve the greater New Haven area only (see service towns)."
+  ],
+  "service_towns": [
+    {
+      "name": "New Haven",
+      "lat": 41.3083,
+      "lon": -72.9279
+    },
+    {
+      "name": "Hamden",
+      "lat": 41.3959,
+      "lon": -72.8968
+    },
+    {
+      "name": "West Haven",
+      "lat": 41.2707,
+      "lon": -72.947
+    },
+    {
+      "name": "East Haven",
+      "lat": 41.2762,
+      "lon": -72.8684
+    },
+    {
+      "name": "North Haven",
+      "lat": 41.3909,
+      "lon": -72.8595
+    },
+    {
+      "name": "Branford",
+      "lat": 41.2795,
+      "lon": -72.8151
+    },
+    {
+      "name": "Guilford",
+      "lat": 41.289,
+      "lon": -72.6818
+    },
+    {
+      "name": "Madison",
+      "lat": 41.2795,
+      "lon": -72.5984
+    },
+    {
+      "name": "Milford",
+      "lat": 41.2223,
+      "lon": -73.0565
+    },
+    {
+      "name": "Orange",
+      "lat": 41.2784,
+      "lon": -73.0257
+    },
+    {
+      "name": "Woodbridge",
+      "lat": 41.3526,
+      "lon": -73.0084
+    },
+    {
+      "name": "Wallingford",
+      "lat": 41.457,
+      "lon": -72.8231
+    },
+    {
+      "name": "Cheshire",
+      "lat": 41.499,
+      "lon": -72.9007
+    }
+  ],
+  "slots": [
+    {
+      "id": "AM",
+      "label": "between 8 and 11 AM",
+      "start": "08:00",
+      "end": "11:00"
+    },
+    {
+      "id": "MID",
+      "label": "between 11 AM and 2 PM",
+      "start": "11:00",
+      "end": "14:00"
+    },
+    {
+      "id": "PM",
+      "label": "between 2 and 5 PM",
+      "start": "14:00",
+      "end": "17:00"
+    }
+  ],
+  "company_full_name": "HVAC Co Air Conditioning & Heating",
+  "services_offered": [
+    "heating",
+    "air conditioning",
+    "heat pumps",
+    "mini-splits",
+    "furnaces",
+    "boilers",
+    "insulation",
+    "electrical",
+    "solar"
+  ]
+}

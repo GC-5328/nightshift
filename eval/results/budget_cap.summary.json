@@ -1,0 +1,15 @@
+{
+  "tag": "budget_cap",
+  "effort": "low",
+  "calls": 1,
+  "accuracy": 0.714,
+  "avg_cost_usd": 0.00063,
+  "avg_input": 12968,
+  "avg_cached": 11673,
+  "avg_output": 771,
+  "avg_turn_s": 0.14,
+  "avg_requests": 3.0,
+  "call_ids": [
+    1
+  ]
+}

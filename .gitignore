@@ -1,0 +1,15 @@
+# secrets
+.env
+# local Python environment
+.venv/
+__pycache__/
+*.pyc
+# local app data (database, saved settings, uploads) - recreated on first run
+runtime/
+# evaluation databases and logs (results CSVs are kept)
+eval/rt_*/
+eval/runtime*/
+eval/*.log
+# editor / OS
+.claude/
+.DS_Store

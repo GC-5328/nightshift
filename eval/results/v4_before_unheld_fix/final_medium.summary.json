@@ -1,0 +1,23 @@
+{
+  "tag": "final_medium",
+  "effort": "medium",
+  "calls": 9,
+  "accuracy": 1.0,
+  "avg_cost_usd": 0.00197,
+  "avg_input": 33057,
+  "avg_cached": 29872,
+  "avg_output": 2705,
+  "avg_turn_s": 4.17,
+  "avg_requests": 7.4,
+  "call_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

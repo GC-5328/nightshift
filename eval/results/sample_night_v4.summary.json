@@ -1,0 +1,23 @@
+{
+  "tag": "sample_night_v4",
+  "effort": "low",
+  "calls": 9,
+  "accuracy": 0.98,
+  "avg_cost_usd": 0.00136,
+  "avg_input": 33865,
+  "avg_cached": 31187,
+  "avg_output": 1555,
+  "avg_turn_s": 2.69,
+  "avg_requests": 7.6,
+  "call_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

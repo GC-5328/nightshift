@@ -1,0 +1,2 @@
+call_id,scenario,category,priority,passed,checks,score,failed,turns,agent_requests,input_tokens,cached_tokens,output_tokens,reasoning_tokens,cost_usd,avg_turn_s,max_turn_s,wall_s,held_window,transferred_to,effort,repeat
+10,no_heat_elderly,service_request,high,7,7,1.0,,10,11,35817,29146,2552,501,0.002235,1.38,3.68,23.5,"tomorrow, Monday, Oct 26, between 8 and 11 AM",,low,0

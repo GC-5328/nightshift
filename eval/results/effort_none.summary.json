@@ -1,0 +1,23 @@
+{
+  "tag": "effort_none",
+  "effort": "none",
+  "calls": 9,
+  "accuracy": 0.922,
+  "avg_cost_usd": 0.00114,
+  "avg_input": 24308,
+  "avg_cached": 21371,
+  "avg_output": 1265,
+  "avg_turn_s": 2.55,
+  "avg_requests": 7.3,
+  "call_ids": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ]
+}

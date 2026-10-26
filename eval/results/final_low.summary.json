@@ -1,0 +1,32 @@
+{
+  "tag": "final_low",
+  "effort": "low",
+  "calls": 18,
+  "accuracy": 1.0,
+  "avg_cost_usd": 0.00145,
+  "avg_input": 33249,
+  "avg_cached": 30486,
+  "avg_output": 1735,
+  "avg_turn_s": 0.95,
+  "avg_requests": 7.4,
+  "call_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ]
+}
